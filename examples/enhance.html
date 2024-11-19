@@ -162,7 +162,7 @@
                               }
 
                               canvasCtx.putImageData(imageData, 0, 0);
-                              controller.enqueue(new VideoFrame(canvas));
+                              controller.enqueue(new VideoFrame(canvas, { timestamp: frame.timestamp }));
                           }
                       })
                   )
